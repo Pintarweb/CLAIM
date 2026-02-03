@@ -19,7 +19,10 @@ const Header: React.FC = () => {
             <a href="#features" className="hover:text-blue-600 transition-colors">Features</a>
           </div>
 
-          <button className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95">
+          <button 
+            onClick={() => document.getElementById('mission-form')?.scrollIntoView({ behavior: 'smooth' })}
+            className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95"
+          >
             Claim Your Toolkit
           </button>
         </div>
