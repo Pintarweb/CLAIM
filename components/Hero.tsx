@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section className="pt-32 pb-16 px-4 bg-white">
+    <section id="hero-top" className="pt-32 pb-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-10">
           <span className="relative flex h-2 w-2">
@@ -16,13 +16,13 @@ const Hero: React.FC = () => {
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
           End the <span className="text-blue-600">End-of-Month <br /> Claim Scramble.</span>
         </h1>
-        
+
         <p className="max-w-2xl mx-auto text-lg text-slate-900 mb-10 leading-relaxed font-bold">
           One-tap capture for staff. Audit-ready reports for owners. We handle the heavy traffic math and outstation detours while you focus on the tours.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
-          <button 
+          <button
             onClick={() => document.getElementById('mission-form')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-xl shadow-blue-200 flex items-center group"
           >
@@ -31,7 +31,7 @@ const Hero: React.FC = () => {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>
           </button>
-          
+
           <div className="flex flex-wrap items-center justify-center gap-6">
             <div className="flex items-center space-x-2 text-slate-900 font-bold text-sm">
               <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">

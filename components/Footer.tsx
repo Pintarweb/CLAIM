@@ -1,5 +1,6 @@
 
 import React from 'react';
+import { Link } from 'react-router-dom';
 
 const Footer: React.FC = () => {
   return (
@@ -13,14 +14,14 @@ const Footer: React.FC = () => {
             Claim<span className="text-blue-600">Flow</span>
           </span>
         </div>
-        
+
         <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
           © 2025 ClaimFlow Malaysia. Built for Tourism Excellence.
         </div>
 
         <div className="flex space-x-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-          <a href="#" className="hover:text-blue-600 transition-colors">Privacy</a>
-          <a href="#" className="hover:text-blue-600 transition-colors">Terms</a>
+          <Link to="/privacy" className="hover:text-blue-600 transition-colors">Privacy</Link>
+          <Link to="/terms" className="hover:text-blue-600 transition-colors">Terms</Link>
         </div>
       </div>
     </footer>

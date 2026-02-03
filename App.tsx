@@ -1,44 +1,29 @@
 
-import React, { useState } from 'react';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Header from './components/Header';
-import Hero from './components/Hero';
-import Workflow from './components/Workflow';
-import TrustSnippet from './components/TrustSnippet';
-import Compliance from './components/Compliance';
-import Features from './components/Features';
-import Mission from './components/Mission';
-import SuccessState from './components/SuccessState';
 import Footer from './components/Footer';
+import LandingPage from './pages/LandingPage';
+import PrivacyPolicy from './pages/PrivacyPolicy';
+import TermsOfService from './pages/TermsOfService';
 
 const App: React.FC = () => {
-  const [isSubmitted, setIsSubmitted] = useState(false);
-
-  const handleFormSubmit = () => {
-    setIsSubmitted(true);
-    window.scrollTo({ top: 0, behavior: 'smooth' });
-  };
-
   return (
-    <div className="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
-      <Header />
-      
-      <main className="flex-grow">
-        {!isSubmitted ? (
-          <>
-            <Hero />
-            <Workflow />
-            <Compliance />
-            <TrustSnippet />
-            <Features />
-            <Mission onSubmit={handleFormSubmit} />
-          </>
-        ) : (
-          <SuccessState onBack={() => setIsSubmitted(false)} />
-        )}
-      </main>
+    <Router>
+      <div className="min-h-screen flex flex-col selection:bg-blue-600 selection:text-white">
+        <Header />
 
-      <Footer />
-    </div>
+        <main className="flex-grow">
+          <Routes>
+            <Route path="/" element={<LandingPage />} />
+            <Route path="/privacy" element={<PrivacyPolicy />} />
+            <Route path="/terms" element={<TermsOfService />} />
+          </Routes>
+        </main>
+
+        <Footer />
+      </div>
+    </Router>
   );
 };
 
