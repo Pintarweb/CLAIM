@@ -32,11 +32,20 @@ const Hero: React.FC = () => {
             </svg>
           </button>
           
-          <div className="flex items-center space-x-2 text-slate-900 font-bold text-sm">
-            <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
-            </svg>
-            <span>LHDN e-Invoicing Ready</span>
+          <div className="flex flex-wrap items-center justify-center gap-6">
+            <div className="flex items-center space-x-2 text-slate-900 font-bold text-sm">
+              <svg className="w-5 h-5 text-emerald-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
+              </svg>
+              <span>LHDN e-Invoicing Ready</span>
+            </div>
+
+            <div className="flex items-center space-x-2 text-slate-900 font-bold text-sm bg-blue-50 px-3 py-1 rounded-lg border border-blue-100">
+              <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 11H5m14 0a2 2 0 012 2v6a2 2 0 01-2 2H5a2 2 0 01-2-2v-6a2 2 0 012-2m14 0V9a2 2 0 00-2-2M5 11V9a2 2 0 012-2m0 0V5a2 2 0 012-2h6a2 2 0 012 2v2M7 7h10" />
+              </svg>
+              <span className="whitespace-nowrap">Zero-Storage Stress</span>
+            </div>
           </div>
         </div>
 

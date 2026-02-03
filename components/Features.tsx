@@ -29,6 +29,15 @@ const Features: React.FC = () => {
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
         </svg>
       )
+    },
+    {
+      title: "Zero-Storage Stress",
+      description: "Ditch the shoeboxes. Our Supabase backend acts as your permanent digital archive. Search and retrieve receipts in seconds.",
+      icon: (
+        <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />
+        </svg>
+      )
     }
   ];
 
@@ -40,13 +49,13 @@ const Features: React.FC = () => {
           <p className="text-slate-900 font-bold">Whether it's city transfers or outstation tours, we've got you covered.</p>
         </div>
         
-        <div className="grid md:grid-cols-3 gap-8">
+        <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((f, i) => (
-            <div key={i} className="p-10 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col items-start group">
-              <div className="mb-8 w-14 h-14 rounded-2xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
+            <div key={i} className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col items-start group">
+              <div className="mb-6 w-12 h-12 rounded-xl bg-blue-50 text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-500">
                 {f.icon}
               </div>
-              <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">{f.title}</h3>
+              <h3 className="text-lg font-bold text-slate-900 mb-3 tracking-tight">{f.title}</h3>
               <p className="text-slate-900 text-sm leading-relaxed font-bold">{f.description}</p>
             </div>
           ))}
