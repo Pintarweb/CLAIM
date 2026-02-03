@@ -5,7 +5,7 @@ const Features: React.FC = () => {
   const features = [
     {
       title: "The \"Big Plus\" Button",
-      description: "Log a trip, snap a receipt, or capture a TnG eWallet screenshot in one tap. Perfect for busy drivers and guides.",
+      description: "Log a trip, snap a receipt, or capture a TnG eWallet screenshot in one tap. Perfect for busy drivers at a pitstop.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M12 4v16m8-8H4" />
@@ -14,7 +14,7 @@ const Features: React.FC = () => {
     },
     {
       title: "Fair Route Logic",
-      description: "Our engine accounts for inevitable peak-hour jams and necessary detour fairly, ensuring staff are never shortchanged.",
+      description: "Our engine respects the 'Federal Highway Jam' or flash flood detours. Ensures staff are never shortchanged by strict point-to-point math.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 20l-5.447-2.724A1 1 0 013 16.382V5.618a1 1 0 011.447-.894L9 7m0 13l6-3m-6 3V7m6 10l4.553 2.276A1 1 0 0021 18.382V7.618a1 1 0 00-.553-.894L15 4m0 13V4m0 0L9 7" />
@@ -23,7 +23,7 @@ const Features: React.FC = () => {
     },
     {
       title: "Audit-Ready PDFs",
-      description: "Auto-generate professional reports that meet LHDN 2024 digital standards for any state in Malaysia.",
+      description: "Instantly generate Appendix A, B, and C reports that meet LHDN 2024 standards. Professional, clean, and ready for your accountant.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
@@ -31,8 +31,8 @@ const Features: React.FC = () => {
       )
     },
     {
-      title: "Zero-Storage Stress",
-      description: "Ditch the shoeboxes. Our Supabase backend acts as your permanent digital archive. Search and retrieve receipts in seconds.",
+      title: "The 7-Year Vault",
+      description: "Supabase-powered digital archive. Thermal paper receipts fade in 6 months; our secure cloud storage keeps them audit-safe for 7 years.",
       icon: (
         <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
           <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 8h14M5 8a2 2 0 110-4h14a2 2 0 110 4M5 8v10a2 2 0 002 2h10a2 2 0 002-2V8m-9 4h4" />

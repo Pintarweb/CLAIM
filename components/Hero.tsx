@@ -26,7 +26,7 @@ const Hero: React.FC = () => {
             onClick={() => document.getElementById('mission-form')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-xl shadow-blue-200 flex items-center group"
           >
-            Claim Free Toolkit & Pilot
+            Download 2026 Audit-Ready Toolkit
             <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

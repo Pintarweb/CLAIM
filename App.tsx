@@ -4,6 +4,7 @@ import Header from './components/Header';
 import Hero from './components/Hero';
 import Workflow from './components/Workflow';
 import TrustSnippet from './components/TrustSnippet';
+import Compliance from './components/Compliance';
 import Features from './components/Features';
 import Mission from './components/Mission';
 import SuccessState from './components/SuccessState';
@@ -26,6 +27,7 @@ const App: React.FC = () => {
           <>
             <Hero />
             <Workflow />
+            <Compliance />
             <TrustSnippet />
             <Features />
             <Mission onSubmit={handleFormSubmit} />

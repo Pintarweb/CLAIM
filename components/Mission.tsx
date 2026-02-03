@@ -17,11 +17,11 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
   };
 
   const bullets = [
-    { title: "The Build Vision", desc: "We are developing an AI-OCR engine specifically for Malaysian petrol and toll receipts. No more manual data entry or blurry photo disputes." },
-    { title: "The Partnership", desc: "Show me your messiest claim, and I'll build the logic to automate it. We have spots for three more agencies to test our 2025 traffic math." },
-    { title: "Lifetime Founding Discount", bold: true },
-    { title: "Direct Influence on Feature Priority", bold: true },
-    { title: "Complete Audit Preparation Kit", bold: true }
+    { title: "2026 Audit-Ready Guide", desc: "Understand LHDN's latest requirements for travel and tour agencies, specifically regarding the 'Three-Way Match' rule." },
+    { title: "The 'Fair-Traffic' Internal Policy Template", desc: "A ready-to-use PDF template to share with staff that explains how jam-detours and mileage variances are calculated fairly." },
+    { title: "Digital Archive Checklist", desc: "A step-by-step list to help you move from physical shoeboxes to a digital, search-ready archive that lasts 7 years." },
+    { title: "Exclusive Preview: ClaimFlow Automation", bold: true },
+    { title: "Founding Partner Early-Access Invitation", bold: true }
   ];
 
   return (
@@ -29,12 +29,14 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/2">
-            <div className="inline-block px-3 py-1 bg-white/10 rounded text-[10px] font-bold tracking-widest uppercase mb-6">The Mission</div>
+            <div className="inline-block px-3 py-1 bg-white/10 rounded text-[10px] font-bold tracking-widest uppercase mb-6">Expert Resources</div>
             <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-              I'm looking for Partners, <br /> not just Customers.
+              Download the 2026 <br /> Audit-Ready Toolkit.
             </h2>
             <p className="text-white mb-10 text-lg font-medium leading-relaxed">
-              I'm an indie builder creating the tool I wish my family's agency had. We're moving away from the pain of "Reporting" once a month to a "Capture" workflow that makes the end-of-month panic disappear.
+              Managing claims manually is a full-time job. Use our professional templates to set the foundation of trust with your staff and compliance with LHDN. 
+              <br /><br />
+              <span className="text-blue-300 font-bold">Then, see how ClaimFlow automates the entire process so you never have to touch a spreadsheet again.</span>
             </p>
             
             <div className="space-y-6">
@@ -56,8 +58,8 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
 
           <div className="lg:w-1/2 w-full">
             <div className="bg-white rounded-[2rem] p-10 text-slate-900 shadow-2xl">
-              <h3 className="text-2xl font-black mb-2">Claim Your Free Toolkit</h3>
-              <p className="text-slate-600 text-sm font-semibold mb-8">Get instant access to the 2025 Audit-Ready Kit and join our pilot program waitlist.</p>
+              <h3 className="text-2xl font-black mb-2">Get Your Free Toolkit</h3>
+              <p className="text-slate-600 text-sm font-semibold mb-8">Instant download for the Audit-Ready Guide & Policy Templates.</p>
               
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
@@ -87,11 +89,11 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                   type="submit"
                   className="w-full py-4 bg-blue-600 hover:bg-blue-700 text-white font-black rounded-xl transition-all shadow-xl shadow-blue-100 active:scale-[0.98]"
                 >
-                  Claim My Toolkit & Join Pilot
+                  Download Toolkit & See Automation
                 </button>
                 
                 <p className="text-center text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                  The toolkit download starts immediately. No payment required.
+                  The toolkit download starts immediately.
                 </p>
               </form>
             </div>
