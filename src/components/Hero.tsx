@@ -3,7 +3,7 @@ import React from 'react';
 
 const Hero: React.FC = () => {
   return (
-    <section id="hero-top" className="pt-32 pb-16 px-4 bg-white">
+    <section id="hero-top" className="pt-24 md:pt-32 pb-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto text-center">
         <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-blue-50 border border-blue-100 mb-10">
           <span className="relative flex h-2 w-2">
