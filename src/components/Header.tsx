@@ -13,6 +13,8 @@ const Header: React.FC = () => {
     }
   };
 
+  const isSuccess = new URLSearchParams(location.search).get('success') === 'true';
+
   return (
     <nav className="fixed w-full z-50 bg-white/80 backdrop-blur-md border-b border-slate-100">
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -26,16 +28,20 @@ const Header: React.FC = () => {
             </span>
           </div>
 
-          <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-500">
-            <button onClick={() => handleScroll('features')} className="hover:text-blue-600 transition-colors">Features</button>
-          </div>
+          {!isSuccess && (
+            <>
+              <div className="hidden md:flex space-x-8 text-sm font-medium text-slate-500">
+                <button onClick={() => handleScroll('features')} className="hover:text-blue-600 transition-colors">Features</button>
+              </div>
 
-          <button
-            onClick={() => handleScroll('mission-form')}
-            className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95"
-          >
-            Claim Your Toolkit
-          </button>
+              <button
+                onClick={() => handleScroll('mission-form')}
+                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95"
+              >
+                Claim Your Toolkit
+              </button>
+            </>
+          )}
         </div>
       </div>
     </nav>

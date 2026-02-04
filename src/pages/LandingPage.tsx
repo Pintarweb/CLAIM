@@ -1,6 +1,6 @@
 
-import React, { useState, useEffect } from 'react';
-import { useLocation } from 'react-router-dom';
+import React, { useEffect } from 'react';
+import { useLocation, useNavigate } from 'react-router-dom';
 import Hero from '../components/Hero';
 import Workflow from '../components/Workflow';
 import TrustSnippet from '../components/TrustSnippet';
@@ -10,8 +10,9 @@ import Mission from '../components/Mission';
 import SuccessState from '../components/SuccessState';
 
 const LandingPage: React.FC = () => {
-    const [isSubmitted, setIsSubmitted] = useState(false);
     const location = useLocation();
+    const navigate = useNavigate();
+    const isSuccess = new URLSearchParams(location.search).get('success') === 'true';
 
     useEffect(() => {
         if (location.state && (location.state as any).scrollTo) {
@@ -25,14 +26,14 @@ const LandingPage: React.FC = () => {
         }
     }, [location]);
 
-    const handleFormSubmit = () => {
-        setIsSubmitted(true);
+    const handleFormSubmit = (email: string) => {
+        navigate('?success=true', { state: { email } });
         window.scrollTo({ top: 0, behavior: 'smooth' });
     };
 
     return (
         <>
-            {!isSubmitted ? (
+            {!isSuccess ? (
                 <>
                     <Hero />
                     <Workflow />
@@ -42,7 +43,7 @@ const LandingPage: React.FC = () => {
                     <Mission onSubmit={handleFormSubmit} />
                 </>
             ) : (
-                <SuccessState onBack={() => setIsSubmitted(false)} />
+                <SuccessState onBack={() => navigate('/')} />
             )}
         </>
     );
