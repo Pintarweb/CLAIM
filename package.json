@@ -9,6 +9,8 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.6.0",
+    "@modelcontextprotocol/server-github": "^2025.4.8",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
     "react-router-dom": "^7.13.0"
