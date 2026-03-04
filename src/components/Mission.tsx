@@ -25,6 +25,17 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
 
       if (insertError) throw insertError;
 
+      // Invoke the edge function to handle emails and notifications
+      const { error: functionError } = await supabase.functions.invoke('notify-lead', {
+        body: { email, agency_name: agency }
+      });
+
+      if (functionError) {
+        console.error('Error invoking notify-lead function:', functionError);
+        // We log the error, but we still proceed to the success state for the user 
+        // since the lead was successfully saved in the DB.
+      }
+
       // Save email for the success page (survives refreshes)
       localStorage.setItem('user_email', email);
 
