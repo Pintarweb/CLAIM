@@ -5,6 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
+    "prebuild": "node generate-sitemap.js",
     "build": "vite build",
     "preview": "vite preview"
   },
@@ -12,9 +13,13 @@
     "@modelcontextprotocol/sdk": "^0.6.0",
     "@modelcontextprotocol/server-github": "^2025.4.8",
     "@supabase/supabase-js": "^2.94.0",
+    "dotenv": "^17.3.1",
     "jszip": "^3.10.1",
+    "lucide-react": "^0.576.0",
     "react": "^19.2.4",
     "react-dom": "^19.2.4",
+    "react-helmet-async": "^3.0.0",
+    "react-markdown": "^10.1.0",
     "react-router-dom": "^7.13.0"
   },
   "devDependencies": {

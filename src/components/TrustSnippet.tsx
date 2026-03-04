@@ -8,15 +8,15 @@ const TrustSnippet: React.FC = () => {
     <section className="py-24 bg-white overflow-hidden border-b border-slate-100">
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row items-center gap-16">
-          
+
           {/* Visual Snippet */}
           <div className="lg:w-1/2 w-full flex justify-center lg:justify-end">
             <div className="relative group">
               {/* Background Glow */}
               <div className="absolute -inset-4 bg-blue-100/50 rounded-[2.5rem] blur-2xl group-hover:bg-blue-200/50 transition-colors"></div>
-              
+
               {/* Mobile Card Mockup */}
-              <div className="relative w-72 bg-white border border-slate-200 rounded-[2rem] shadow-2xl p-6 select-none transition-transform hover:scale-[1.02]">
+              <div className="relative w-full max-w-sm bg-white border border-slate-200 rounded-[2rem] shadow-2xl p-6 select-none transition-transform hover:scale-[1.02]">
                 <div className="flex justify-between items-center mb-6">
                   <h4 className="text-xs font-black text-slate-400 uppercase tracking-widest">Trip Settings</h4>
                   <div className="w-2 h-2 rounded-full bg-emerald-500 animate-pulse"></div>
@@ -28,7 +28,7 @@ const TrustSnippet: React.FC = () => {
                       <p className="text-sm font-black text-slate-900">Traffic / Jam Detour</p>
                       <p className="text-[10px] font-bold text-slate-500">Adds variance to base mileage</p>
                     </div>
-                    <button 
+                    <button
                       onClick={() => setIsOn(!isOn)}
                       className={`w-12 h-6 rounded-full transition-colors relative flex items-center px-1 ${isOn ? 'bg-blue-600' : 'bg-slate-300'}`}
                     >
@@ -70,7 +70,7 @@ const TrustSnippet: React.FC = () => {
             <h2 className="text-4xl font-black text-slate-900 mb-6 leading-tight">
               The Toggle that Builds <br /> <span className="text-blue-600">Mutual Trust.</span>
             </h2>
-            
+
             <div className="space-y-8">
               <div className="group">
                 <div className="flex items-center space-x-3 mb-2">
