@@ -20,7 +20,7 @@ const PrivacyPolicy: React.FC = () => {
                 <p>We implement appropriate technical and organizational measures to protect the security of your personal information. However, please be aware that no method of transmission over the Internet or method of electronic storage is 100% secure.</p>
 
                 <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">4. Contact Us</h2>
-                <p>If you have any questions about this Privacy Policy, please contact us at support@claimflow.my.</p>
+                <p>If you have any questions about this Privacy Policy, please contact us at support@pintarweb.com.</p>
             </div>
         </div>
     );

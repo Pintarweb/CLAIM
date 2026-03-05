@@ -16,7 +16,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="text-[10px] font-bold text-slate-500 uppercase tracking-widest">
-          © 2025 ClaimFlow Malaysia. Built for Tourism Excellence.
+          © {new Date().getFullYear()} ClaimFlow Malaysia. Built for Tourism Excellence.
         </div>
 
         <div className="flex space-x-6 text-[10px] font-bold text-slate-500 uppercase tracking-widest">

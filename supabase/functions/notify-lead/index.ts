@@ -44,11 +44,85 @@ serve(async (req) => {
       ],
       subject: "ClaimFlow Early Access",
       htmlContent: `
-        <p>Hi ${agency_name},</p>
-        <p>Thanks for your interest in ClaimFlow.</p>
-        <p>I'm personally onboarding a small number of Malaysian travel agencies to ensure mileage claims are audit-ready and compliant with LHDN requirements.</p>
-        <p>I'll contact you shortly to understand your workflow.</p>
-        <p>Best regards,<br>Founder, ClaimFlow</p>
+        <!DOCTYPE html>
+        <html>
+        <head>
+        <style>
+          body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+            color: #334155;
+            line-height: 1.6;
+            background-color: #f8fafc;
+            margin: 0;
+            padding: 20px 0;
+          }
+          .container {
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1), 0 2px 4px -1px rgba(0, 0, 0, 0.06);
+          }
+          .header {
+            background-color: #2563eb;
+            color: #ffffff;
+            padding: 30px;
+            text-align: center;
+          }
+          .header h1 {
+            margin: 0;
+            font-size: 24px;
+            font-weight: 800;
+            letter-spacing: -0.025em;
+          }
+          .content {
+            padding: 40px 30px;
+          }
+          .content p {
+            margin: 0 0 20px 0;
+          }
+          .footer {
+            background-color: #f1f5f9;
+            padding: 20px 30px;
+            text-align: center;
+            font-size: 14px;
+            color: #64748b;
+          }
+          .highlight {
+            background-color: #eff6ff;
+            border-left: 4px solid #3b82f6;
+            padding: 18px;
+            margin: 25px 0;
+            border-radius: 6px;
+          }
+        </style>
+        </head>
+        <body>
+          <div class="container">
+            <div class="header">
+              <h1>ClaimFlow Early Access</h1>
+            </div>
+            <div class="content">
+              <p>Hi <strong>${agency_name}</strong>,</p>
+              <p>Thank you for expressing your interest in joining the ClaimFlow Pilot Program. We're thrilled to connect with you!</p>
+              
+              <div class="highlight">
+                <p style="margin: 0; color: #1e40af;"><strong>What's Next?</strong><br><br>I am personally onboarding a very selective group of Malaysian travel agencies to ensure mileage claims are completely audit-ready and natively compliant with LHDN requirements.</p>
+              </div>
+              
+              <p>We'll be reviewing your application and I will reach out to you shortly to schedule a brief introductory call. We'd love to learn more about your current workflow and discuss how ClaimFlow can seamlessly integrate into it.</p>
+              
+              <p>In the meantime, if you have any questions, feel free to reply directly to this email.</p>
+              
+              <p style="margin-top: 30px;">Best regards,<br><strong>Yusmarin Samsudin</strong><br>Founder, ClaimFlow</p>
+            </div>
+            <div class="footer">
+              &copy; 2026 ClaimFlow Platform. All rights reserved.
+            </div>
+          </div>
+        </body>
+        </html>
       `
     };
 
