@@ -1,7 +1,23 @@
-
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 
 const Hero: React.FC = () => {
+  const words = ["Overpaying", "Guessing", "Stressing"];
+  const [currentWordIndex, setCurrentWordIndex] = useState(0);
+  const [isFading, setIsFading] = useState(false);
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setIsFading(true);
+
+      setTimeout(() => {
+        setCurrentWordIndex((prev) => (prev + 1) % words.length);
+        setIsFading(false);
+      }, 500); // Matches the transition duration
+
+    }, 3000);
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <section id="hero-top" className="pt-24 md:pt-32 pb-16 px-4 bg-white">
       <div className="max-w-5xl mx-auto text-center">
@@ -14,11 +30,21 @@ const Hero: React.FC = () => {
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
-          End the <span className="text-blue-600">End-of-Month <br /> Claim Scramble.</span>
+          Stop{' '}
+          <span className="text-blue-600 inline-block min-w-[240px] md:min-w-[380px] text-center">
+            <span
+              className={`inline-block transition-all duration-500 ease-in-out ${isFading ? 'opacity-0 blur-sm scale-95 translate-y-2' : 'opacity-100 blur-0 scale-100 translate-y-0'
+                }`}
+            >
+              {words[currentWordIndex]}
+            </span>
+          </span>
+          <br className="hidden md:block" />
+          Over Claims.
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg text-slate-900 mb-10 leading-relaxed font-bold">
-          One-tap capture for staff. Audit-ready reports for owners. We handle the heavy traffic math and outstation detours while you focus on your growth.
+          From fake mileage to audit risk — KlaimFlow gives you full control, verification, and compliance in one system.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">
@@ -26,7 +52,7 @@ const Hero: React.FC = () => {
             onClick={() => document.getElementById('mission-form')?.scrollIntoView({ behavior: 'smooth' })}
             className="px-8 py-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-xl transition-all shadow-xl shadow-blue-200 flex items-center group"
           >
-            Download 2026 Audit-Ready Toolkit
+            Get Free Audit Review
             <svg className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 5l7 7-7 7" />
             </svg>

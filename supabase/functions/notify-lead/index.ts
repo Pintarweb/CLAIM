@@ -1,3 +1,4 @@
+// @ts-nocheck
 import { serve } from "https://deno.land/std@0.168.0/http/server.ts"
 
 const corsHeaders = {
@@ -108,7 +109,7 @@ serve(async (req) => {
               <p>Thank you for expressing your interest in joining the KlaimFlow Pilot Program. We're thrilled to connect with you!</p>
               
               <div class="highlight">
-                <p style="margin: 0; color: #1e40af;"><strong>What's Next?</strong><br><br>I am personally onboarding a very selective group of Malaysian travel agencies to ensure mileage claims are completely audit-ready and natively compliant with LHDN requirements.</p>
+                <p style="margin: 0; color: #1e40af;"><strong>What's Next?</strong><br><br>I am personally onboarding a very selective group of Malaysian businesses to ensure mileage claims are completely audit-ready and natively compliant with LHDN requirements.</p>
               </div>
               
               <p>We'll be reviewing your application and I will reach out to you shortly to schedule a brief introductory call. We'd love to learn more about your current workflow and discuss how KlaimFlow can seamlessly integrate into it.</p>

@@ -93,7 +93,7 @@ const Header: React.FC = () => {
                 onClick={() => handleScroll('mission-form')}
                 className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95 ml-4"
               >
-                Claim Your Toolkit
+                Get Free Audit Review
               </button>
             </>
           )}
