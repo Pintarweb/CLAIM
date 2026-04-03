@@ -54,10 +54,10 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
   };
 
   const bullets = [
-    { title: "2026 Audit-Ready Guide", desc: "Understand LHDN's latest requirements for travel and tour agencies, specifically regarding the 'Three-Way Match' rule." },
+    { title: "2026 Audit-Ready Guide", desc: "Understand LHDN's latest requirements for Malaysian organizations, specifically regarding the 'Three-Way Match' rule." },
     { title: "The 'Fair-Traffic' Internal Policy Template", desc: "A ready-to-use PDF template to share with staff that explains how jam-detours and mileage variances are calculated fairly." },
     { title: "Digital Archive Checklist", desc: "A step-by-step list to help you move from physical shoeboxes to a digital, search-ready archive that lasts 7 years." },
-    { title: "Priority Invitation: ClaimFlow Pilot Program", bold: true },
+    { title: "Priority Invitation: KlaimFlow Pilot Program", bold: true },
     { title: "Founding Partner Early-Access Invitation", bold: true }
   ];
 
@@ -104,7 +104,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Nusantara Travel & Tours"
+                    placeholder="e.g. Nusantara Solutions"
                     value={agency}
                     onChange={(e) => setAgency(e.target.value)}
                     className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 font-medium transition-all"

@@ -10,7 +10,7 @@ const Hero: React.FC = () => {
             <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
             <span className="relative inline-flex rounded-full h-2 w-2 bg-blue-600"></span>
           </span>
-          <span className="text-blue-600 text-[10px] font-extrabold tracking-widest uppercase">Built for Malaysian Tourism Agencies</span>
+          <span className="text-blue-600 text-[10px] font-extrabold tracking-widest uppercase">Built for Malaysian Businesses</span>
         </div>
 
         <h1 className="text-5xl md:text-7xl font-extrabold text-slate-900 mb-8 tracking-tight leading-tight">
@@ -18,7 +18,7 @@ const Hero: React.FC = () => {
         </h1>
 
         <p className="max-w-2xl mx-auto text-lg text-slate-900 mb-10 leading-relaxed font-bold">
-          One-tap capture for staff. Audit-ready reports for owners. We handle the heavy traffic math and outstation detours while you focus on the tours.
+          One-tap capture for staff. Audit-ready reports for owners. We handle the heavy traffic math and outstation detours while you focus on your growth.
         </p>
 
         <div className="flex flex-col sm:flex-row items-center justify-center gap-6 mb-20">

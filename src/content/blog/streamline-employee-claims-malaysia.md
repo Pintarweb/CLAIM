@@ -3,14 +3,14 @@ title: "How to Streamline Employee Expense Claims in Malaysia (LHDN Compliant)"
 date: "2026-03-04"
 description: "Discover how Malaysian B2B companies can automate expense claims, eliminate manual data entry, and stay 100% compliant with LHDN regulations."
 slug: "streamline-employee-claims-malaysia"
-author: "ClaimFlow Editorial Team"
+author: "KlaimFlow Editorial Team"
 ---
 
 # How to Streamline Employee Expense Claims in Malaysia
 
 Processing employee expense claims is traditionally one of the most frustrating bottlenecks for HR and Finance teams in Malaysia. Between deciphering faded petrol receipts, calculating mileage manually using Google Maps, and ensuring every single reimbursement complies with Lembaga Hasil Dalam Negeri (LHDN) regulations, companies waste hundreds of hours every month.
 
-In this guide, we will break down the true cost of manual claim processing and how adopting an automated digital workflow like **ClaimFlow** can instantly modernize your B2B operations.
+In this guide, we will break down the true cost of manual claim processing and how adopting an automated digital workflow like **KlaimFlow** can instantly modernize your B2B operations.
 
 ## The Hidden Costs of Manual Claims Processing
 
@@ -40,14 +40,14 @@ Transitioning from a manual system to an automated one doesn't have to be a pain
 Stop asking employees to hold on to paper receipts until the end of the month. Implement a system where employees can snap a photo of their odometer or toll receipt immediately from their mobile phones.
 
 ### 2. Standardize Mileage Tracking
-Instead of relying on estimations or separate Google Maps screenshots, integrate a standardized mapping system. ClaimFlow natively utilizes OpenStreetMap to calculate precise point-A to point-B distances, eliminating disputes and standardizing payout calculations automatically. 
+Instead of relying on estimations or separate Google Maps screenshots, integrate a standardized mapping system. KlaimFlow natively utilizes OpenStreetMap to calculate precise point-A to point-B distances, eliminating disputes and standardizing payout calculations automatically. 
 
 ### 3. Generate Ready-to-File Reports
 HR and Finance teams should not have to copy and paste data from individual submissions into a master spreadsheet. Modern tools automatically compile all approved expenses into monthly batch reports formatted exactly as LHDN requires.
 
-## Why ClaimFlow is the Ultimate Solution for Malaysian B2B Teams
+## Why KlaimFlow is the Ultimate Solution for Malaysian B2B Teams
 
-We built **ClaimFlow** specifically to solve these exact headaches for Malaysian businesses. 
+We built **KlaimFlow** specifically to solve these exact headaches for Malaysian businesses. 
 
 Our core philosophy is simple: **Eliminate the friction.**
 
@@ -55,7 +55,7 @@ Our core philosophy is simple: **Eliminate the friction.**
 * **For Managers:** A unified dashboard to review, approve, or reject claims with one click.
 * **For Finance & HR:** Instant, LHDN-compliant CSV exports that are ready for tax filing and payroll integration. 
 
-> "Switching to ClaimFlow cut our month-end payroll processing time by two full days. It's the highest ROI software we've deployed this year." 
+> "Switching to KlaimFlow cut our month-end payroll processing time by two full days. It's the highest ROI software we've deployed this year." 
 
 ## Take Control of Your Expenses Today
 

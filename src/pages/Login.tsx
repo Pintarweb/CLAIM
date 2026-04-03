@@ -38,7 +38,7 @@ const Login = () => {
         <div className="min-h-screen bg-slate-900 flex items-center justify-center px-4">
             <div className="bg-white rounded-3xl p-8 max-w-md w-full shadow-2xl">
                 <div className="text-center mb-8">
-                    <h1 className="text-3xl font-black text-slate-900 mb-2">ClaimFlow</h1>
+                    <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-32 w-auto mx-auto mb-4" />
                     <p className="text-slate-500 font-medium">Pilot Access Portal</p>
                 </div>
 

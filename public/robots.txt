@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://claimflow.com/sitemap.xml
+Sitemap: https://klaimflow.com/sitemap.xml

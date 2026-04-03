@@ -121,7 +121,7 @@ const NewClaim = () => {
 
     return (
         <div className="bg-white rounded-3xl p-8 shadow-sm border border-slate-100">
-            <h2 className="text-2xl font-black text-slate-900 mb-6">New Travel Claim</h2>
+            <h2 className="text-2xl font-black text-slate-900 mb-6">New Expense Claim</h2>
 
             {/* Step Indicators */}
             <div className="flex space-x-2 mb-8">

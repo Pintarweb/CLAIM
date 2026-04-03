@@ -12,7 +12,7 @@ const supabaseUrl = process.env.VITE_SUPABASE_URL;
 const supabaseKey = process.env.VITE_SUPABASE_ANON_KEY;
 
 const SITEMAP_PATH = path.join(__dirname, 'public', 'sitemap.xml');
-const BASE_URL = 'https://claimflow.com';
+const BASE_URL = 'https://klaimflow.com';
 
 async function generateSitemap() {
     console.log('Generating sitemap...');

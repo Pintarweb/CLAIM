@@ -184,7 +184,7 @@ const SuccessState: React.FC<SuccessStateProps> = ({ onBack }) => {
                 <h4 className="text-4xl lg:text-5xl font-black mb-6 leading-tight">Join the<br />Pilot Program</h4>
 
                 <p className="text-blue-100 font-semibold text-lg leading-relaxed mb-6">
-                  Ready to stop doing this manually? We are looking for 10 Travel Agencies to build the future of claim automation with us.
+                  Ready to stop doing this manually? We are looking for 10 Corporate Partners to build the future of claim automation with us.
                 </p>
               </div>
 

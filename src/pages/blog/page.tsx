@@ -22,14 +22,14 @@ export default function BlogIndex() {
     return (
         <>
             <Helmet>
-                <title>Articles | ClaimFlow Blog</title>
-                <meta name="description" content="Read the latest news, updates, and B2B insights from ClaimFlow." />
-                <link rel="canonical" href="https://claimflow.com/blog" />
-                <meta property="og:title" content="Articles | ClaimFlow Blog" />
-                <meta property="og:description" content="Read the latest news, updates, and B2B insights from ClaimFlow." />
+                <title>Articles | KlaimFlow Blog</title>
+                <meta name="description" content="Read the latest news, updates, and B2B insights from KlaimFlow." />
+                <link rel="canonical" href="https://klaimflow.com/blog" />
+                <meta property="og:title" content="Articles | KlaimFlow Blog" />
+                <meta property="og:description" content="Read the latest news, updates, and B2B insights from KlaimFlow." />
                 <meta property="og:type" content="website" />
-                <meta property="og:url" content="https://claimflow.com/blog" />
-                <meta property="og:image" content="https://claimflow.com/og-image.jpg" />
+                <meta property="og:url" content="https://klaimflow.com/blog" />
+                <meta property="og:image" content="https://klaimflow.com/og-image.jpg" />
                 <meta name="twitter:card" content="summary_large_image" />
             </Helmet>
 

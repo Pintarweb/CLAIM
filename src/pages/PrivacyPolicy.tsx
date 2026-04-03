@@ -8,7 +8,7 @@ const PrivacyPolicy: React.FC = () => {
             <p className="text-slate-500 mb-8">Last Updated: February 2026</p>
 
             <div className="prose prose-slate max-w-none text-slate-600 space-y-6">
-                <p>This Privacy Policy describes how ClaimFlow ("we", "us", or "our") collects, uses, and discloses your personal information when you use our website and services.</p>
+                <p>This Privacy Policy describes how KlaimFlow ("we", "us", or "our") collects, uses, and discloses your personal information when you use our website and services.</p>
 
                 <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Information We Collect</h2>
                 <p>We collect information that you provide to us directly, such as when you fill out a form, request a demo, or communicate with us. This may include your name, email address, company name, and phone number.</p>

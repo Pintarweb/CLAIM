@@ -46,9 +46,9 @@ const Features: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="text-center mb-16">
           <h2 className="text-4xl font-black text-slate-900 mb-4">Built for the Field, Not the Desk</h2>
-          <p className="text-slate-900 font-bold">Whether it's city transfers or outstation tours, we've got you covered.</p>
+          <p className="text-slate-900 font-bold">Whether it's city travel or outstation visits, we've got you covered.</p>
         </div>
-        
+
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {features.map((f, i) => (
             <div key={i} className="p-8 rounded-[2rem] bg-white border border-slate-100 shadow-sm hover:shadow-xl transition-all duration-500 flex flex-col items-start group">

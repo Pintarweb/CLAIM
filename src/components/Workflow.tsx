@@ -7,7 +7,7 @@ const Workflow: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="bg-[#1e40af] text-white py-4 px-8 rounded-t-2xl text-center mb-12 shadow-lg">
           <h2 className="text-xl md:text-3xl font-black tracking-tight uppercase">
-            CLAIM<span className="text-blue-200">FLOW</span>: FROM RECEIPT TO REIMBURSEMENT IN SECONDS
+            KLAIM<span className="text-blue-200">FLOW</span>: FROM RECEIPT TO REIMBURSEMENT IN SECONDS
           </h2>
         </div>
 
@@ -19,7 +19,7 @@ const Workflow: React.FC = () => {
                 <span className="block text-sm font-black text-slate-900 uppercase">STEP 1: ONE-TAP CAPTURE</span>
                 <span className="block text-xs font-bold text-slate-400 uppercase">(The Proof)</span>
               </div>
-              
+
               <div className="relative w-48 h-64 bg-slate-900 rounded-[2.5rem] border-8 border-slate-800 shadow-2xl overflow-hidden mb-6">
                 <div className="absolute top-0 w-full h-6 bg-slate-800 flex justify-center pt-1">
                   <div className="w-12 h-3 bg-black rounded-full"></div>
@@ -40,12 +40,12 @@ const Workflow: React.FC = () => {
                   </div>
                 </div>
                 <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
-                   <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white animate-pulse">
-                     <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
-                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
-                     </svg>
-                   </div>
+                  <div className="w-14 h-14 bg-blue-600 rounded-full flex items-center justify-center text-white animate-pulse">
+                    <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 9a2 2 0 012-2h.93a2 2 0 001.664-.89l.812-1.22A2 2 0 0110.07 4h3.86a2 2 0 011.664.89l.812 1.22A2 2 0 0018.07 7H19a2 2 0 012 2v9a2 2 0 01-2 2H5a2 2 0 01-2-2V9z" />
+                      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 13a3 3 0 11-6 0 3 3 0 016 0z" />
+                    </svg>
+                  </div>
                 </div>
               </div>
 
@@ -68,36 +68,36 @@ const Workflow: React.FC = () => {
                 <span className="block text-sm font-black text-slate-900 uppercase">STEP 2: AI-EXTRACTED DATA</span>
                 <span className="block text-xs font-bold text-slate-400 uppercase">(The Logic)</span>
               </div>
-              
+
               <div className="relative w-56 h-64 bg-slate-900 rounded-lg border-4 border-slate-800 shadow-2xl overflow-hidden mb-6">
                 <div className="p-3 h-full bg-white flex flex-col">
-                   <div className="text-[8px] font-black text-slate-400 mb-2">ClaimFlow App</div>
-                   <div className="space-y-3">
-                     <div>
-                       <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Vendor</div>
-                       <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center">
-                         <span className="text-[7px] font-bold text-slate-900">Toll Plaza LDP</span>
-                       </div>
-                     </div>
-                     <div className="flex gap-2">
-                        <div className="flex-1">
-                          <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Date</div>
-                          <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center text-[7px] font-bold">25 Oct 2026</div>
-                        </div>
-                        <div className="flex-1">
-                          <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Time</div>
-                          <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center text-[7px] font-bold">10:45 AM</div>
-                        </div>
-                     </div>
-                     <div className="relative">
-                       <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Amount</div>
-                       <div className="h-5 bg-blue-50 border border-blue-200 rounded px-1 flex items-center text-[8px] font-black text-blue-600">RM 2.10</div>
-                       <div className="absolute right-0 top-0 translate-y-2 translate-x-2 bg-blue-600 text-white px-1.5 py-0.5 rounded-full text-[6px] font-black flex items-center space-x-1 shadow-md">
-                         <svg className="w-2 h-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z"/></svg>
-                         <span>AI VERIFIED</span>
-                       </div>
-                     </div>
-                   </div>
+                  <div className="text-[8px] font-black text-slate-400 mb-2">KlaimFlow App</div>
+                  <div className="space-y-3">
+                    <div>
+                      <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Vendor</div>
+                      <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center">
+                        <span className="text-[7px] font-bold text-slate-900">Toll Plaza LDP</span>
+                      </div>
+                    </div>
+                    <div className="flex gap-2">
+                      <div className="flex-1">
+                        <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Date</div>
+                        <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center text-[7px] font-bold">25 Oct 2026</div>
+                      </div>
+                      <div className="flex-1">
+                        <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Time</div>
+                        <div className="h-4 bg-slate-50 border border-slate-100 rounded px-1 flex items-center text-[7px] font-bold">10:45 AM</div>
+                      </div>
+                    </div>
+                    <div className="relative">
+                      <div className="text-[6px] font-bold text-slate-400 mb-0.5 uppercase">Amount</div>
+                      <div className="h-5 bg-blue-50 border border-blue-200 rounded px-1 flex items-center text-[8px] font-black text-blue-600">RM 2.10</div>
+                      <div className="absolute right-0 top-0 translate-y-2 translate-x-2 bg-blue-600 text-white px-1.5 py-0.5 rounded-full text-[6px] font-black flex items-center space-x-1 shadow-md">
+                        <svg className="w-2 h-2" fill="currentColor" viewBox="0 0 20 20"><path d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" /></svg>
+                        <span>AI VERIFIED</span>
+                      </div>
+                    </div>
+                  </div>
                 </div>
               </div>
 
@@ -120,7 +120,7 @@ const Workflow: React.FC = () => {
                 <span className="block text-sm font-black text-slate-900 uppercase">STEP 3: GPS-LINKED MAP</span>
                 <span className="block text-xs font-bold text-slate-400 uppercase">(The Context)</span>
               </div>
-              
+
               <div className="relative w-48 h-64 bg-slate-900 rounded-[2.5rem] border-8 border-slate-800 shadow-2xl overflow-hidden mb-6">
                 <div className="absolute top-0 w-full h-6 bg-slate-800 flex justify-center pt-1">
                   <div className="w-12 h-3 bg-black rounded-full"></div>
@@ -129,17 +129,17 @@ const Workflow: React.FC = () => {
                   {/* Mock Map */}
                   <div className="absolute inset-0">
                     <svg className="w-full h-full opacity-30" viewBox="0 0 100 100">
-                       <path d="M0,20 Q50,40 100,20" stroke="white" strokeWidth="2" fill="none" />
-                       <path d="M20,0 Q40,50 20,100" stroke="white" strokeWidth="2" fill="none" />
-                       <path d="M80,0 Q60,50 80,100" stroke="white" strokeWidth="2" fill="none" />
+                      <path d="M0,20 Q50,40 100,20" stroke="white" strokeWidth="2" fill="none" />
+                      <path d="M20,0 Q40,50 20,100" stroke="white" strokeWidth="2" fill="none" />
+                      <path d="M80,0 Q60,50 80,100" stroke="white" strokeWidth="2" fill="none" />
                     </svg>
                   </div>
                   <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2">
                     <div className="relative">
                       <svg className="w-32 h-32 text-blue-500" viewBox="0 0 100 100" fill="none">
-                         <path d="M10,80 C30,60 70,40 90,20" stroke="currentColor" strokeWidth="3" strokeDasharray="5,5" />
-                         <circle cx="10" cy="80" r="4" fill="#ef4444" />
-                         <circle cx="90" cy="20" r="4" fill="#3b82f6" />
+                        <path d="M10,80 C30,60 70,40 90,20" stroke="currentColor" strokeWidth="3" strokeDasharray="5,5" />
+                        <circle cx="10" cy="80" r="4" fill="#ef4444" />
+                        <circle cx="90" cy="20" r="4" fill="#3b82f6" />
                       </svg>
                       <div className="absolute top-0 right-0 bg-blue-600 text-white text-[6px] font-black px-1 py-0.5 rounded shadow">
                         LDP HIGHWAY
@@ -158,11 +158,11 @@ const Workflow: React.FC = () => {
 
         <div className="mt-16 text-center">
           <p className="text-xs font-black uppercase tracking-widest text-blue-800/60 bg-blue-100/50 inline-block px-4 py-2 rounded-full border border-blue-200">
-            The 'Vibe' Way to Process Claims: Snap, Verify, Done. | ClaimFlow | Ark Alliance
+            The 'Vibe' Way to Process Claims: Snap, Verify, Done. | KlaimFlow | Ark Alliance
           </p>
         </div>
       </div>
-      
+
       <style>{`
         @keyframes bounce-horizontal {
           0%, 100% { transform: translateX(0); }

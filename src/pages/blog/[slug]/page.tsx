@@ -78,14 +78,14 @@ export default function BlogPostPage() {
     return (
         <>
             <Helmet>
-                <title>{post.meta.title} | ClaimFlow Blog</title>
+                <title>{post.meta.title} | KlaimFlow Blog</title>
                 <meta name="description" content={post.meta.description} />
-                <link rel="canonical" href={`https://claimflow.com/blog/${post.meta.slug}`} />
-                <meta property="og:title" content={`${post.meta.title} | ClaimFlow Blog`} />
+                <link rel="canonical" href={`https://klaimflow.com/blog/${post.meta.slug}`} />
+                <meta property="og:title" content={`${post.meta.title} | KlaimFlow Blog`} />
                 <meta property="og:description" content={post.meta.description} />
                 <meta property="og:type" content="article" />
-                <meta property="og:url" content={`https://claimflow.com/blog/${post.meta.slug}`} />
-                <meta property="og:image" content={post.meta.image_url ? `https://claimflow.com${post.meta.image_url}` : "https://claimflow.com/og-image.jpg"} />
+                <meta property="og:url" content={`https://klaimflow.com/blog/${post.meta.slug}`} />
+                <meta property="og:image" content={post.meta.image_url ? `https://klaimflow.com${post.meta.image_url}` : "https://klaimflow.com/og-image.jpg"} />
                 <meta name="twitter:card" content="summary_large_image" />
                 <script type="application/ld+json">
                     {`
@@ -93,7 +93,7 @@ export default function BlogPostPage() {
                             "@context": "https://schema.org",
                             "@type": "BlogPosting",
                             "headline": "${post.meta.title}",
-                            "image": "${post.meta.image_url ? `https://claimflow.com${post.meta.image_url}` : "https://claimflow.com/og-image.jpg"}",
+                            "image": "${post.meta.image_url ? `https://klaimflow.com${post.meta.image_url}` : "https://klaimflow.com/og-image.jpg"}",
                             "description": "${post.meta.description}",
                             "author": {
                                 "@type": "Person",
@@ -102,7 +102,7 @@ export default function BlogPostPage() {
                             "datePublished": "${new Date(post.meta.date).toISOString()}",
                             "mainEntityOfPage": {
                                 "@type": "WebPage",
-                                "@id": "https://claimflow.com/blog/${post.meta.slug}"
+                                "@id": "https://klaimflow.com/blog/${post.meta.slug}"
                             }
                         }
                     `}
@@ -167,7 +167,7 @@ export default function BlogPostPage() {
                         Ready to automate your mileage?
                     </h2>
                     <p className="text-lg text-slate-600 mb-8 max-w-xl mx-auto">
-                        Stop dealing with manual odometer readings and Excel spreadsheets. Join the ClaimFlow pilot program and digitally transform your expense management today.
+                        Stop dealing with manual odometer readings and Excel spreadsheets. Join the KlaimFlow pilot program and digitally transform your expense management today.
                     </p>
                     <button
                         onClick={handleJoinClick}

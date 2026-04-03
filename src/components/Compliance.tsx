@@ -7,7 +7,7 @@ const Compliance: React.FC = () => {
       label: "INTENT",
       headerBg: "bg-blue-300",
       title: "Google Calendar Sync:",
-      desc: "Every claim starts with a business purpose. Automatically linked to your team's scheduled tours and meetings.",
+      desc: "Every claim starts with a business purpose. Automatically linked to your team's scheduled meetings and site visits.",
       icon: (
         <div className="relative w-32 h-32 mx-auto mb-4">
           <svg className="w-full h-full" viewBox="0 0 100 100" fill="none">
@@ -47,12 +47,12 @@ const Compliance: React.FC = () => {
             <div className="absolute top-1/2 left-0 w-full h-0.5 bg-orange-400 shadow-[0_0_8px_rgba(251,146,60,0.8)]"></div>
           </div>
           <div className="absolute inset-0">
-             <svg className="w-full h-full" viewBox="0 0 100 100">
-                <path d="M25,25 L35,25 M25,25 L25,35" stroke="#1e3a8a" strokeWidth="2" fill="none" />
-                <path d="M65,25 L75,25 M75,25 L75,35" stroke="#1e3a8a" strokeWidth="2" fill="none" />
-                <path d="M25,75 L35,75 M25,75 L25,65" stroke="#1e3a8a" strokeWidth="2" fill="none" />
-                <path d="M65,75 L75,75 M75,75 L75,65" stroke="#1e3a8a" strokeWidth="2" fill="none" />
-             </svg>
+            <svg className="w-full h-full" viewBox="0 0 100 100">
+              <path d="M25,25 L35,25 M25,25 L25,35" stroke="#1e3a8a" strokeWidth="2" fill="none" />
+              <path d="M65,25 L75,25 M75,25 L75,35" stroke="#1e3a8a" strokeWidth="2" fill="none" />
+              <path d="M25,75 L35,75 M25,75 L25,65" stroke="#1e3a8a" strokeWidth="2" fill="none" />
+              <path d="M65,75 L75,75 M75,75 L75,65" stroke="#1e3a8a" strokeWidth="2" fill="none" />
+            </svg>
           </div>
         </div>
       )
@@ -128,17 +128,17 @@ const Compliance: React.FC = () => {
               {/* Connector Arrows */}
               {i < 2 && (
                 <div className="hidden md:block absolute top-1/2 -right-6 -translate-y-1/2 z-20">
-                   <svg className="w-12 h-12 text-blue-500 animate-pulse" viewBox="0 0 24 24" fill="none">
-                      <path d="M4 12 C10 4, 14 20, 20 12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
-                      <path d="M17 15 L20 12 L17 9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
-                   </svg>
+                  <svg className="w-12 h-12 text-blue-500 animate-pulse" viewBox="0 0 24 24" fill="none">
+                    <path d="M4 12 C10 4, 14 20, 20 12" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" />
+                    <path d="M17 15 L20 12 L17 9" stroke="currentColor" strokeWidth="2.5" strokeLinecap="round" strokeLinejoin="round" />
+                  </svg>
                 </div>
               )}
             </div>
           ))}
         </div>
       </div>
-      
+
       {/* Decorative background element (star/sparkle) */}
       <div className="absolute bottom-8 right-8 text-blue-100 opacity-50">
         <svg className="w-12 h-12" fill="currentColor" viewBox="0 0 24 24">

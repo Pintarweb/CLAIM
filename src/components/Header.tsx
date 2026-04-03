@@ -40,12 +40,7 @@ const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleScroll('hero-top')}>
-            <div className="w-6 h-6 bg-blue-600 rounded flex items-center justify-center transform rotate-12">
-              <span className="text-white font-bold text-xs -rotate-12">C</span>
-            </div>
-            <span className="text-lg font-extrabold tracking-tight text-slate-900 uppercase">
-              Claim<span className="text-blue-600">Flow</span>
-            </span>
+            <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-32 w-auto drop-shadow-sm" />
           </div>
 
           {!isSuccess && (

@@ -36,13 +36,13 @@ serve(async (req) => {
     const senderEmail = Deno.env.get('SENDER_EMAIL') || "hello@claimflow.site"; // Fallback to a default if not set
     const brevoPayload = {
       sender: {
-        name: "ClaimFlow Founder",
+        name: "KlaimFlow Founder",
         email: senderEmail
       },
       to: [
         { email: email, name: agency_name }
       ],
-      subject: "ClaimFlow Early Access",
+      subject: "KlaimFlow Early Access",
       htmlContent: `
         <!DOCTYPE html>
         <html>
@@ -101,24 +101,24 @@ serve(async (req) => {
         <body>
           <div class="container">
             <div class="header">
-              <h1>ClaimFlow Early Access</h1>
+              <h1>KlaimFlow Early Access</h1>
             </div>
             <div class="content">
               <p>Hi <strong>${agency_name}</strong>,</p>
-              <p>Thank you for expressing your interest in joining the ClaimFlow Pilot Program. We're thrilled to connect with you!</p>
+              <p>Thank you for expressing your interest in joining the KlaimFlow Pilot Program. We're thrilled to connect with you!</p>
               
               <div class="highlight">
                 <p style="margin: 0; color: #1e40af;"><strong>What's Next?</strong><br><br>I am personally onboarding a very selective group of Malaysian travel agencies to ensure mileage claims are completely audit-ready and natively compliant with LHDN requirements.</p>
               </div>
               
-              <p>We'll be reviewing your application and I will reach out to you shortly to schedule a brief introductory call. We'd love to learn more about your current workflow and discuss how ClaimFlow can seamlessly integrate into it.</p>
+              <p>We'll be reviewing your application and I will reach out to you shortly to schedule a brief introductory call. We'd love to learn more about your current workflow and discuss how KlaimFlow can seamlessly integrate into it.</p>
               
               <p>In the meantime, if you have any questions, feel free to reply directly to this email.</p>
               
-              <p style="margin-top: 30px;">Best regards,<br><strong>Yusmarin Samsudin</strong><br>Founder, ClaimFlow</p>
+              <p style="margin-top: 30px;">Best regards,<br><strong>Yusmarin Samsudin</strong><br>Founder, KlaimFlow</p>
             </div>
             <div class="footer">
-              &copy; 2026 ClaimFlow Platform. All rights reserved.
+              &copy; 2026 KlaimFlow Platform. All rights reserved.
             </div>
           </div>
         </body>
@@ -137,7 +137,7 @@ serve(async (req) => {
     });
 
     // 2. Send Telegram Notification
-    const telegramText = `New ClaimFlow lead: ${agency_name} (${email})`;
+    const telegramText = `New KlaimFlow lead: ${agency_name} (${email})`;
     const telegramUrl = `https://api.telegram.org/bot${telegramBotToken}/sendMessage`;
 
     const telegramReq = fetch(telegramUrl, {

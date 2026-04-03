@@ -58,7 +58,7 @@ const ExportCSV: React.FC<ExportCSVProps> = ({ batch, claims }) => {
         const url = URL.createObjectURL(blob);
         const link = document.createElement("a");
         link.setAttribute("href", url);
-        link.setAttribute("download", `ClaimFlow_Report_${batch.month_year}.csv`);
+        link.setAttribute("download", `KlaimFlow_Report_${batch.month_year}.csv`);
         document.body.appendChild(link);
         link.click();
         document.body.removeChild(link);
