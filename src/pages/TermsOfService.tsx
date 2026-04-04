@@ -8,7 +8,7 @@ const TermsOfService: React.FC = () => {
             <p className="text-slate-500 mb-8">Last Updated: February 2026</p>
 
             <div className="prose prose-slate max-w-none text-slate-600 space-y-6">
-                <p>Please read these Terms of Service ("Terms") carefully before using the ClaimFlow website and services operated by ClaimFlow ("us", "we", or "our").</p>
+                <p>Please read these Terms of Service ("Terms") carefully before using the KlaimFlow website and services operated by KlaimFlow ("us", "we", or "our").</p>
 
                 <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">1. Acceptance of Terms</h2>
                 <p>By accessing or using our Service, you agree to be bound by these Terms. If you disagree with any part of the terms, then you may not access the Service.</p>
@@ -17,7 +17,7 @@ const TermsOfService: React.FC = () => {
                 <p>You agree to use the Service only for lawful purposes and in accordance with these Terms. You are responsible for maintaining the confidentiality of your account and password.</p>
 
                 <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">3. Intellectual Property</h2>
-                <p>The Service and its original content, features, and functionality are and will remain the exclusive property of ClaimFlow and its licensors.</p>
+                <p>The Service and its original content, features, and functionality are and will remain the exclusive property of KlaimFlow and its licensors.</p>
 
                 <h2 className="text-2xl font-bold text-slate-900 mt-8 mb-4">4. Termination</h2>
                 <p>We may terminate or suspend access to our Service immediately, without prior notice or liability, for any reason whatsoever, including without limitation if you breach the Terms.</p>

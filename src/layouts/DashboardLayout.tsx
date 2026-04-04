@@ -23,7 +23,7 @@ const DashboardLayout = () => {
         <div className="flex min-h-screen bg-slate-50">
             {/* Mobile Header */}
             <div className="md:hidden fixed top-0 w-full bg-slate-900 z-50 px-4 py-3 flex items-center justify-between shadow-md">
-                <h1 className="text-xl font-black text-white">ClaimFlow</h1>
+                <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-20 w-auto brightness-0 invert" />
                 <button
                     onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
                     className="text-white p-2"
@@ -51,7 +51,7 @@ const DashboardLayout = () => {
                 md:translate-x-0 md:block pt-16 md:pt-0
             `}>
                 <div className="p-8 h-full flex flex-col">
-                    <h1 className="text-2xl font-black mb-8 hidden md:block">ClaimFlow</h1>
+                    <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-24 w-auto mb-10 hidden md:block brightness-0 invert" />
                     <nav className="space-y-2 flex-grow">
                         {navItems.map((item) => (
                             <Link
@@ -59,7 +59,7 @@ const DashboardLayout = () => {
                                 to={item.path}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${location.pathname === item.path || (item.path !== '/dashboard' && location.pathname.startsWith(item.path))
-                                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/50'
+                                    ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50'
                                     : 'text-slate-400 hover:text-white hover:bg-white/5'
                                     }`}
                             >

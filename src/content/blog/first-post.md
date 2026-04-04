@@ -1,14 +1,14 @@
 ---
-title: "Announcing ClaimFlow V1"
+title: "Announcing KlaimFlow V1"
 date: "2026-03-04"
 description: "How our new automated claim system saves HR teams 15 hours a week using B2B insights."
-slug: "announcing-claimflow-v1"
+slug: "announcing-klaimflow-v1"
 author: "Engineering Team"
 ---
 
 # The Future of Claims is Here
 
-Welcome to the **ClaimFlow** blog! We are excited to announce our brand-new MVP designed specifically for Malaysian B2B operations.
+Welcome to the **KlaimFlow** blog! We are excited to announce our brand-new MVP designed specifically for Malaysian B2B operations.
 
 Our system features:
 

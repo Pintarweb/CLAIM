@@ -178,7 +178,7 @@ const AdminReview = () => {
                                     <td className="p-4 text-right">
                                         <button
                                             onClick={() => handleSelectBatch(batch)}
-                                            className="text-blue-600 font-bold hover:underline"
+                                            className="text-emerald-600 font-bold hover:underline"
                                         >
                                             Review Batch &rarr;
                                         </button>

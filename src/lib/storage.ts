@@ -20,14 +20,17 @@ export const downloadFile = (filename: string) => {
 export const DOCUMENTS = [
     {
         title: "The Audit-Ready Guide",
-        baseName: "The Audit-Ready Guide"
+        baseName: "The Audit-Ready Guide",
+        thumbnail: "/thumbnails/audit_guide.png"
     },
     {
         title: "Official Mileage & Expense Policy",
-        baseName: "Official Mileage & Expense Policy"
+        baseName: "Official Mileage & Expense Policy",
+        thumbnail: "/thumbnails/policy.png"
     },
     {
         title: "Monthly Claim Checklist for Staff",
-        baseName: "Monthly Claim Checklist for Staff"
+        baseName: "Monthly Claim Checklist for Staff",
+        thumbnail: "/thumbnails/checklist.png"
     }
 ];

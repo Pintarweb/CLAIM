@@ -105,7 +105,7 @@ const MyDrafts = () => {
                 <button
                     onClick={handleSubmitToHR}
                     disabled={drafts.length === 0 || submitting}
-                    className="px-6 py-3 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-900/20 transition-all disabled:opacity-50 disabled:shadow-none flex items-center justify-center gap-2"
+                    className="px-6 py-3 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 shadow-lg shadow-emerald-900/20 transition-all disabled:opacity-50 disabled:shadow-none flex items-center justify-center gap-2"
                 >
                     {submitting ? 'Compiling...' : `Compile & Submit to HR (${drafts.length})`}
                 </button>
@@ -122,7 +122,7 @@ const MyDrafts = () => {
                     <p className="text-slate-500 mb-6 max-w-sm mx-auto">Start logging your trips by submitting a new claim. They will be saved here until you compile them for HR.</p>
                     <button
                         onClick={() => navigate('/dashboard/new-claim')}
-                        className="text-blue-600 font-bold hover:underline"
+                        className="text-emerald-600 font-bold hover:underline"
                     >
                         + Submit New Claim
                     </button>
@@ -130,7 +130,7 @@ const MyDrafts = () => {
             ) : (
                 <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
                     {drafts.map((claim) => (
-                        <div key={claim.id} className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm hover:border-blue-200 transition-colors group relative">
+                        <div key={claim.id} className="bg-white rounded-3xl p-6 border border-slate-100 shadow-sm hover:border-emerald-200 transition-colors group relative">
                             <button
                                 onClick={() => handleDelete(claim.id)}
                                 className="absolute top-4 right-4 text-slate-400 hover:text-rose-500 bg-slate-50 hover:bg-rose-50 p-2 rounded-lg opacity-0 group-hover:opacity-100 transition-all"
@@ -140,7 +140,7 @@ const MyDrafts = () => {
                             </button>
 
                             <div className="flex items-center gap-3 mb-4">
-                                <div className="p-2 bg-blue-50 text-blue-600 rounded-lg">
+                                <div className="p-2 bg-emerald-50 text-emerald-600 rounded-lg">
                                     <svg className="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor"><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" /><path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" /></svg>
                                 </div>
                                 <div>

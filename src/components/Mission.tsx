@@ -42,9 +42,6 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
       // Success
       onSubmit(email);
 
-      // Optional: Trigger simulated download here or in SuccessState
-      // window.open('LINK_TO_PDF', '_blank');
-
     } catch (err: any) {
       console.error('Error submitting lead:', err);
       setError('Something went wrong. Please try again.');
@@ -54,11 +51,11 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
   };
 
   const bullets = [
-    { title: "2026 Audit-Ready Guide", desc: "Understand LHDN's latest requirements for travel and tour agencies, specifically regarding the 'Three-Way Match' rule." },
-    { title: "The 'Fair-Traffic' Internal Policy Template", desc: "A ready-to-use PDF template to share with staff that explains how jam-detours and mileage variances are calculated fairly." },
-    { title: "Digital Archive Checklist", desc: "A step-by-step list to help you move from physical shoeboxes to a digital, search-ready archive that lasts 7 years." },
-    { title: "Priority Invitation: ClaimFlow Pilot Program", bold: true },
-    { title: "Founding Partner Early-Access Invitation", bold: true }
+    { title: "Identify phantom mileage and inflated claims", desc: "Find exactly where you're losing money to untracked detours and loose estimates." },
+    { title: "Flag missing receipts and audit risks", desc: "See which claims would fail an LHDN audit today due to poor documentation." },
+    { title: "Calculate your true ROI", desc: "Get a clear projection of how much time and money you'll save by switching to an automated system." },
+    { title: "Custom KlaimFlow Implementation Plan", bold: true },
+    { title: "Priority Onboarding for 2026 Compliance", bold: true }
   ];
 
   return (
@@ -66,27 +63,27 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
       <div className="max-w-6xl mx-auto px-4">
         <div className="flex flex-col lg:flex-row gap-16 items-start">
           <div className="lg:w-1/2">
-            <div className="inline-block px-3 py-1 bg-white/10 rounded text-[10px] font-bold tracking-widest uppercase mb-6">Expert Resources</div>
+            <div className="inline-block px-3 py-1 bg-white/10 rounded text-[10px] font-bold tracking-widest uppercase mb-6">Limited Availability</div>
             <h2 className="text-4xl md:text-5xl font-black mb-8 leading-tight">
-              Download the 2026 <br /> Audit-Ready Toolkit.
+              Get Your Free <br /> Claim Audit Review.
             </h2>
             <p className="text-white mb-10 text-lg font-medium leading-relaxed">
-              Managing claims manually is a full-time job. Use our professional templates to set the foundation of trust with your staff and compliance with LHDN.
+              Stop guessing if you're overpaying or at risk. Let our experts run a quick analysis on your current claim process to uncover hidden leaks and compliance gaps.
               <br /><br />
-              <span className="text-blue-300 font-bold">Then, discover how to join our Pilot Program and automate the entire process.</span>
+              <span className="text-emerald-300 font-bold">100% free. No obligation. Just clear data on your claim risks.</span>
             </p>
 
             <div className="space-y-6">
               {bullets.map((b, i) => (
                 <div key={i} className="flex items-start space-x-3">
-                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center">
+                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <span className={`text-sm ${b.bold ? 'font-bold' : 'font-semibold text-blue-50'}`}>{b.title}</span>
-                    {b.desc && <p className="text-xs text-blue-100/70 mt-1 leading-relaxed">{b.desc}</p>}
+                    <span className={`text-sm ${b.bold ? 'font-bold' : 'font-semibold text-emerald-50'}`}>{b.title}</span>
+                    {b.desc && <p className="text-xs text-emerald-100/70 mt-1 leading-relaxed">{b.desc}</p>}
                   </div>
                 </div>
               ))}
@@ -95,19 +92,19 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
 
           <div className="lg:w-1/2 w-full">
             <div className="bg-white rounded-[2rem] p-10 text-slate-900 shadow-2xl">
-              <h3 className="text-2xl font-black mb-2">Get Your Free Toolkit</h3>
-              <p className="text-slate-600 text-sm font-semibold mb-8">Instant download for the Audit-Ready Guide & Policy Templates.</p>
+              <h3 className="text-2xl font-black mb-2">Claim Your Free Audit</h3>
+              <p className="text-slate-600 text-sm font-semibold mb-8">Enter your details to schedule your review session.</p>
 
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div>
-                  <label className="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Agency Name</label>
+                  <label className="block text-[10px] font-black uppercase tracking-widest text-slate-500 mb-2">Company Name</label>
                   <input
                     type="text"
                     required
-                    placeholder="e.g. Nusantara Travel & Tours"
+                    placeholder="e.g. Nusantara Solutions"
                     value={agency}
                     onChange={(e) => setAgency(e.target.value)}
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 font-medium transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 font-medium transition-all"
                   />
                 </div>
                 <div>
@@ -115,10 +112,10 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                   <input
                     type="email"
                     required
-                    placeholder="manager@agency.com"
+                    placeholder="manager@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 font-medium transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 font-medium transition-all"
                   />
                 </div>
 
@@ -129,7 +126,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-blue-100 active:scale-[0.98] flex justify-center items-center"
+                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
                 >
                   {isSubmitting ? (
                     <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -137,12 +134,12 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                       <path className="opacity-75" fill="currentColor" d="M4 12a8 8 0 018-8V0C5.373 0 0 5.373 0 12h4zm2 5.291A7.962 7.962 0 014 12H0c0 3.042 1.135 5.824 3 7.938l3-2.647z"></path>
                     </svg>
                   ) : (
-                    "Download Free Toolkit"
+                    "Schedule Free Audit Review"
                   )}
                 </button>
 
                 <p className="text-center text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                  The toolkit download starts immediately.
+                  Our team will reach out within 24 hours.
                 </p>
               </form>
             </div>
