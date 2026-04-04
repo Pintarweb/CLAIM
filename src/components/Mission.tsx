@@ -70,20 +70,20 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
             <p className="text-white mb-10 text-lg font-medium leading-relaxed">
               Stop guessing if you're overpaying or at risk. Let our experts run a quick analysis on your current claim process to uncover hidden leaks and compliance gaps.
               <br /><br />
-              <span className="text-blue-300 font-bold">100% free. No obligation. Just clear data on your claim risks.</span>
+              <span className="text-emerald-300 font-bold">100% free. No obligation. Just clear data on your claim risks.</span>
             </p>
 
             <div className="space-y-6">
               {bullets.map((b, i) => (
                 <div key={i} className="flex items-start space-x-3">
-                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-blue-500 flex items-center justify-center">
+                  <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                       <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={3} d="M5 13l4 4L19 7" />
                     </svg>
                   </div>
                   <div>
-                    <span className={`text-sm ${b.bold ? 'font-bold' : 'font-semibold text-blue-50'}`}>{b.title}</span>
-                    {b.desc && <p className="text-xs text-blue-100/70 mt-1 leading-relaxed">{b.desc}</p>}
+                    <span className={`text-sm ${b.bold ? 'font-bold' : 'font-semibold text-emerald-50'}`}>{b.title}</span>
+                    {b.desc && <p className="text-xs text-emerald-100/70 mt-1 leading-relaxed">{b.desc}</p>}
                   </div>
                 </div>
               ))}
@@ -104,7 +104,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                     placeholder="e.g. Nusantara Solutions"
                     value={agency}
                     onChange={(e) => setAgency(e.target.value)}
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 font-medium transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 font-medium transition-all"
                   />
                 </div>
                 <div>
@@ -115,7 +115,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                     placeholder="manager@company.com"
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
-                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-600 font-medium transition-all"
+                    className="w-full px-5 py-4 rounded-xl bg-slate-50 border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-600 font-medium transition-all"
                   />
                 </div>
 
@@ -126,7 +126,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                 <button
                   type="submit"
                   disabled={isSubmitting}
-                  className="w-full py-4 bg-blue-600 hover:bg-blue-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-blue-100 active:scale-[0.98] flex justify-center items-center"
+                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
                 >
                   {isSubmitting ? (
                     <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

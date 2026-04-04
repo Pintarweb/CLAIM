@@ -52,7 +52,7 @@ const Features: React.FC = () => {
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
           {pillars.map((p, i) => (
             <div key={i} className="p-8 rounded-[2rem] bg-slate-50 border border-slate-100 hover:shadow-lg transition-all duration-300 flex flex-col group">
-              <div className="mb-6 w-14 h-14 rounded-2xl bg-white shadow-sm text-blue-600 flex items-center justify-center group-hover:bg-blue-600 group-hover:text-white transition-colors duration-300">
+              <div className="mb-6 w-14 h-14 rounded-2xl bg-white shadow-sm text-emerald-600 flex items-center justify-center group-hover:bg-emerald-600 group-hover:text-white transition-colors duration-300">
                 {p.icon}
               </div>
               <h3 className="text-xl font-bold text-slate-900 mb-4 tracking-tight">{p.title}</h3>

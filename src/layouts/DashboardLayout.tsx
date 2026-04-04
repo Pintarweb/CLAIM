@@ -59,7 +59,7 @@ const DashboardLayout = () => {
                                 to={item.path}
                                 onClick={() => setIsMobileMenuOpen(false)}
                                 className={`block px-4 py-3 rounded-xl font-medium transition-colors ${location.pathname === item.path || (item.path !== '/dashboard' && location.pathname.startsWith(item.path))
-                                    ? 'bg-blue-600 text-white shadow-lg shadow-blue-900/50'
+                                    ? 'bg-emerald-600 text-white shadow-lg shadow-emerald-900/50'
                                     : 'text-slate-400 hover:text-white hover:bg-white/5'
                                     }`}
                             >

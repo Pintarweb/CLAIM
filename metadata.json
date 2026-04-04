@@ -1,5 +1,6 @@
 {
-  "name": "KlaimFlow - Malaysian B2B Landing Page",
-  "description": "A high-conversion landing page for KlaimFlow, a startup automating mileage and toll claims for Malaysian businesses, featuring integrated LHDN compliance messaging and a dynamic success state.",
+  "name": "KlaimFlow | Audit-Ready Expense Management for Malaysian SMEs",
+  "description": "Stop manual data entry and LHDN audit risks with KlaimFlow’s AI-powered expense tracking.",
+  "icon": "/favicon1.png",
   "requestFramePermissions": []
 }

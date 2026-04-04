@@ -41,10 +41,10 @@ const Workflow: React.FC = () => {
           ))}
         </div>
 
-        <div className="bg-blue-600 text-white py-10 px-8 rounded-3xl text-center max-w-4xl mx-auto shadow-2xl">
+        <div className="bg-emerald-600 text-white py-10 px-8 rounded-3xl text-center max-w-4xl mx-auto shadow-2xl">
           <h3 className="text-2xl md:text-3xl font-black">
             Most companies don't have a claim problem.<br />
-            <span className="text-blue-200">They have a control problem.</span>
+            <span className="text-emerald-200">They have a control problem.</span>
           </h3>
         </div>
       </div>

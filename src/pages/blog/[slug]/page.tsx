@@ -110,7 +110,7 @@ export default function BlogPostPage() {
             </Helmet>
             <article className="max-w-3xl mx-auto bg-white rounded-3xl shadow-sm border border-slate-200 overflow-hidden mt-8 md:mt-12">
                 <header className="bg-slate-50 border-b border-slate-200 px-6 py-10 sm:px-12 sm:py-16 text-center">
-                    <Link to="/blog" className="inline-flex items-center text-sm font-bold tracking-wide uppercase text-blue-600 hover:text-blue-800 mb-8 transition-colors group">
+                    <Link to="/blog" className="inline-flex items-center text-sm font-bold tracking-wide uppercase text-emerald-600 hover:text-emerald-800 mb-8 transition-colors group">
                         <span aria-hidden="true" className="mr-2 group-hover:-translate-x-1 transition-transform">&larr;</span> Back to all posts
                     </Link>
                     <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-slate-900 tracking-tight leading-tight mb-6">
@@ -147,11 +147,11 @@ export default function BlogPostPage() {
                             prose-h2:text-3xl prose-h2:mt-12 prose-h2:mb-6
                             prose-h3:text-2xl prose-h3:mt-8 prose-h3:mb-4
                             prose-p:text-slate-700 prose-p:leading-relaxed prose-p:mb-6
-                            prose-a:font-semibold prose-a:text-blue-600 prose-a:no-underline hover:prose-a:underline
+                            prose-a:font-semibold prose-a:text-emerald-600 prose-a:no-underline hover:prose-a:underline
                             prose-ul:list-disc prose-ul:pl-6 prose-ul:mb-6 prose-ul:text-slate-700
                             prose-ol:list-decimal prose-ol:pl-6 prose-ol:mb-6 prose-ol:text-slate-700
                             prose-li:mb-2
-                            prose-blockquote:border-l-4 prose-blockquote:border-blue-500 prose-blockquote:pl-6 
+                            prose-blockquote:border-l-4 prose-blockquote:border-emerald-500 prose-blockquote:pl-6 
                             prose-blockquote:py-2 prose-blockquote:italic prose-blockquote:text-slate-600 prose-blockquote:bg-slate-50 prose-blockquote:rounded-r-xl
                             prose-strong:font-extrabold prose-strong:text-slate-900"
                     >
@@ -171,7 +171,7 @@ export default function BlogPostPage() {
                     </p>
                     <button
                         onClick={handleJoinClick}
-                        className="inline-flex justify-center items-center px-8 py-4 text-base font-bold text-white bg-blue-600 hover:bg-blue-700 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 w-full sm:w-auto cursor-pointer"
+                        className="inline-flex justify-center items-center px-8 py-4 text-base font-bold text-white bg-emerald-600 hover:bg-emerald-700 rounded-xl transition-all shadow-md hover:shadow-lg hover:-translate-y-0.5 w-full sm:w-auto cursor-pointer"
                     >
                         Join the Pilot Program
                     </button>
@@ -219,7 +219,7 @@ export default function BlogPostPage() {
                                         required
                                         value={agencyName}
                                         onChange={(e) => setAgencyName(e.target.value)}
-                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-shadow"
                                         placeholder="Acme Corp"
                                     />
                                 </div>
@@ -231,14 +231,14 @@ export default function BlogPostPage() {
                                         required
                                         value={email}
                                         onChange={(e) => setEmail(e.target.value)}
-                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-shadow"
+                                        className="w-full px-4 py-3 rounded-lg border border-slate-200 focus:outline-none focus:ring-2 focus:ring-emerald-500 focus:border-transparent transition-shadow"
                                         placeholder="jane@acme.com"
                                     />
                                 </div>
                                 <button
                                     type="submit"
                                     disabled={submitting}
-                                    className="w-full py-3.5 px-4 bg-blue-600 hover:bg-blue-700 text-white font-bold rounded-lg transition-colors flex justify-center items-center gap-2 shadow-sm disabled:opacity-70"
+                                    className="w-full py-3.5 px-4 bg-emerald-600 hover:bg-emerald-700 text-white font-bold rounded-lg transition-colors flex justify-center items-center gap-2 shadow-sm disabled:opacity-70"
                                 >
                                     {submitting ? 'Submitting...' : 'Request Access'}
                                 </button>

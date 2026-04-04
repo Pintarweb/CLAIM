@@ -49,7 +49,7 @@ const Login = () => {
                         </div>
                         <h3 className="text-xl font-bold mb-2">Check your email</h3>
                         <p className="text-slate-600 mb-6">We sent a magic link to <span className="font-bold">{email}</span></p>
-                        <button onClick={() => setSent(false)} className="text-blue-600 font-bold hover:underline">Try another email</button>
+                        <button onClick={() => setSent(false)} className="text-emerald-600 font-bold hover:underline">Try another email</button>
                     </div>
                 ) : (
                     <form onSubmit={handleLogin} className="space-y-4">
@@ -59,14 +59,14 @@ const Login = () => {
                                 type="email"
                                 value={email}
                                 onChange={(e) => setEmail(e.target.value)}
-                                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none font-medium"
+                                className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-emerald-600 outline-none font-medium"
                                 placeholder="you@agency.com"
                                 required
                             />
                         </div>
                         <button
                             disabled={loading}
-                            className="w-full py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 transition-all disabled:opacity-50"
+                            className="w-full py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 transition-all disabled:opacity-50"
                         >
                             {loading ? 'Sending Link...' : 'Send Magic Link'}
                         </button>

@@ -40,19 +40,19 @@ const Header: React.FC = () => {
       <div className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           <div className="flex items-center space-x-2 cursor-pointer" onClick={() => handleScroll('hero-top')}>
-            <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-32 w-auto drop-shadow-sm" />
+            <img src="/logo-full_no_bg.png" alt="KlaimFlow" className="h-48 w-auto drop-shadow-sm" />
           </div>
 
           {!isSuccess && (
             <>
               <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-500">
-                <button onClick={() => handleScroll('features')} className="hover:text-blue-600 transition-colors">Features</button>
+                <button onClick={() => handleScroll('features')} className="hover:text-emerald-600 transition-colors">Features</button>
 
                 {/* Blog Dropdown */}
                 <div className="relative" ref={dropdownRef}>
                   <button
                     onClick={() => setIsBlogDropdownOpen(!isBlogDropdownOpen)}
-                    className="flex items-center hover:text-blue-600 transition-colors focus:outline-none"
+                    className="flex items-center hover:text-emerald-600 transition-colors focus:outline-none"
                   >
                     Blog
                     <svg className={`ml-1 flex-shrink-0 h-4 w-4 transition-transform ${isBlogDropdownOpen ? 'rotate-180' : ''}`} xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" aria-hidden="true">
@@ -67,7 +67,7 @@ const Header: React.FC = () => {
                           <Link
                             key={post.meta.slug}
                             to={`/blog/${post.meta.slug}`}
-                            className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-blue-600 transition-colors border-b border-slate-50 last:border-0"
+                            className="block px-4 py-3 text-sm text-slate-700 hover:bg-slate-50 hover:text-emerald-600 transition-colors border-b border-slate-50 last:border-0"
                             onClick={() => setIsBlogDropdownOpen(false)}
                           >
                             <div className="font-semibold mb-1 line-clamp-1">{post.meta.title}</div>
@@ -78,7 +78,7 @@ const Header: React.FC = () => {
                       <div className="bg-slate-50 border-t border-slate-100">
                         <Link
                           to="/blog"
-                          className="block px-4 py-3 text-sm text-blue-600 hover:text-blue-800 font-semibold text-center transition-colors"
+                          className="block px-4 py-3 text-sm text-emerald-600 hover:text-emerald-800 font-semibold text-center transition-colors"
                           onClick={() => setIsBlogDropdownOpen(false)}
                         >
                           View All Posts &rarr;
@@ -91,7 +91,7 @@ const Header: React.FC = () => {
 
               <button
                 onClick={() => handleScroll('mission-form')}
-                className="bg-blue-600 hover:bg-blue-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-blue-200 active:scale-95 ml-4"
+                className="bg-emerald-600 hover:bg-emerald-700 text-white text-sm font-bold py-2 px-6 rounded-full transition-all shadow-md shadow-emerald-200 active:scale-95 ml-4"
               >
                 Get Free Audit Review
               </button>

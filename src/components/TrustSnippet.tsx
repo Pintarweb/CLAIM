@@ -41,11 +41,11 @@ const TrustSnippet: React.FC = () => {
           </div>
 
           {/* With KlaimFlow */}
-          <div className="bg-blue-600 p-8 rounded-3xl border border-blue-500 shadow-xl relative overflow-hidden">
-            <div className="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-blue-500 rounded-full blur-2xl opacity-50"></div>
+          <div className="bg-emerald-600 p-8 rounded-3xl border border-emerald-500 shadow-xl relative overflow-hidden">
+            <div className="absolute top-0 right-0 -mt-4 -mr-4 w-32 h-32 bg-emerald-500 rounded-full blur-2xl opacity-50"></div>
             <div className="relative z-10">
               <div className="flex items-center space-x-3 mb-6">
-                <div className="w-12 h-12 bg-white text-blue-600 rounded-xl flex items-center justify-center">
+                <div className="w-12 h-12 bg-white text-emerald-600 rounded-xl flex items-center justify-center">
                   <svg className="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
                   </svg>
@@ -54,16 +54,16 @@ const TrustSnippet: React.FC = () => {
               </div>
               <ul className="space-y-4">
                 <li className="flex items-start">
-                  <span className="text-blue-200 mr-3 mt-1 font-bold">✓</span>
-                  <span className="text-blue-50 font-medium">Controlled costs with GPS-verified distance</span>
+                  <span className="text-emerald-200 mr-3 mt-1 font-bold">✓</span>
+                  <span className="text-emerald-50 font-medium">Controlled costs with GPS-verified distance</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-200 mr-3 mt-1 font-bold">✓</span>
-                  <span className="text-blue-50 font-medium">Clean automated records and extraction</span>
+                  <span className="text-emerald-200 mr-3 mt-1 font-bold">✓</span>
+                  <span className="text-emerald-50 font-medium">Clean automated records and extraction</span>
                 </li>
                 <li className="flex items-start">
-                  <span className="text-blue-200 mr-3 mt-1 font-bold">✓</span>
-                  <span className="text-blue-50 font-medium">Full visibility and 7-year cloud audit trail</span>
+                  <span className="text-emerald-200 mr-3 mt-1 font-bold">✓</span>
+                  <span className="text-emerald-50 font-medium">Full visibility and 7-year cloud audit trail</span>
                 </li>
               </ul>
             </div>

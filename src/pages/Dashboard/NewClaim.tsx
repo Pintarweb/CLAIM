@@ -126,7 +126,7 @@ const NewClaim = () => {
             {/* Step Indicators */}
             <div className="flex space-x-2 mb-8">
                 {[1, 2, 3].map((s) => (
-                    <div key={s} className={`h-2 flex-1 rounded-full ${step >= s ? 'bg-blue-600' : 'bg-slate-100'}`} />
+                    <div key={s} className={`h-2 flex-1 rounded-full ${step >= s ? 'bg-emerald-600' : 'bg-slate-100'}`} />
                 ))}
             </div>
 
@@ -140,7 +140,7 @@ const NewClaim = () => {
                             value={startLocation}
                             onChange={(e) => setStartLocation(e.target.value)}
                             placeholder="e.g. KLIA Terminal 1"
-                            className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none"
+                            className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-emerald-600 outline-none"
                         />
                     </div>
                     <div>
@@ -149,7 +149,7 @@ const NewClaim = () => {
                             type="file"
                             accept="image/*"
                             onChange={(e) => setStartImg(e.target.files?.[0] || null)}
-                            className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                            className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100"
                         />
                     </div>
                     <button
@@ -172,7 +172,7 @@ const NewClaim = () => {
                             value={endLocation}
                             onChange={(e) => setEndLocation(e.target.value)}
                             placeholder="e.g. Petronas Twin Towers"
-                            className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none"
+                            className="w-full px-4 py-3 rounded-xl bg-slate-50 border border-slate-200 focus:ring-2 focus:ring-emerald-600 outline-none"
                         />
                     </div>
                     <div>
@@ -181,7 +181,7 @@ const NewClaim = () => {
                             type="file"
                             accept="image/*"
                             onChange={(e) => setEndImg(e.target.files?.[0] || null)}
-                            className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-blue-50 file:text-blue-700 hover:file:bg-blue-100"
+                            className="w-full text-sm text-slate-500 file:mr-4 file:py-2 file:px-4 file:rounded-xl file:border-0 file:text-sm file:font-semibold file:bg-emerald-50 file:text-emerald-700 hover:file:bg-emerald-100"
                         />
                     </div>
                     <div>
@@ -229,7 +229,7 @@ const NewClaim = () => {
                                     type="number"
                                     value={claimedDistance}
                                     onChange={(e) => setClaimedDistance(e.target.value ? Number(e.target.value) : '')}
-                                    className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:ring-2 focus:ring-blue-600 outline-none font-bold text-lg"
+                                    className="w-full px-4 py-3 rounded-xl bg-white border border-slate-200 focus:ring-2 focus:ring-emerald-600 outline-none font-bold text-lg"
                                 />
                                 <p className="text-xs text-slate-500 mt-2">
                                     If this differs from the map distance above (due to detours, traffic, etc.), you must provide a justification below for LHDN compliance.
@@ -262,7 +262,7 @@ const NewClaim = () => {
                         <button
                             onClick={handleSaveDraft}
                             disabled={loading || (Number(claimedDistance) !== mapDistance && !justification)}
-                            className="w-2/3 py-4 bg-blue-600 text-white font-bold rounded-xl hover:bg-blue-700 shadow-lg shadow-blue-900/20 transition-all disabled:opacity-50"
+                            className="w-2/3 py-4 bg-emerald-600 text-white font-bold rounded-xl hover:bg-emerald-700 shadow-lg shadow-emerald-900/20 transition-all disabled:opacity-50"
                         >
                             {loading ? "Saving Draft..." : "Save to Drafts"}
                         </button>
