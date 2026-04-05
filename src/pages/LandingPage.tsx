@@ -9,6 +9,8 @@ import Features from '../components/Features';
 import Mission from '../components/Mission';
 import SuccessState from '../components/SuccessState';
 
+import FAQ from '../components/FAQ';
+
 const LandingPage: React.FC = () => {
     const location = useLocation();
     const navigate = useNavigate();
@@ -40,6 +42,7 @@ const LandingPage: React.FC = () => {
                     <Compliance />
                     <TrustSnippet />
                     <Features />
+                    <FAQ />
                     <Mission onSubmit={handleFormSubmit} />
                 </>
             ) : (
