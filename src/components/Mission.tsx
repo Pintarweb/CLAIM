@@ -4,12 +4,13 @@ import { supabase } from '../lib/supabase';
 const Mission: React.FC = () => {
   const [email, setEmail] = useState('');
   const [agency, setAgency] = useState('');
+  const [agreedToPdpa, setAgreedToPdpa] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !agency) return;
+    if (!email || !agency || !agreedToPdpa) return;
 
     setIsSubmitting(true);
     setError(null);
@@ -17,7 +18,12 @@ const Mission: React.FC = () => {
     try {
       const { error: insertError } = await supabase
         .from('leads')
-        .insert([{ email, agency_name: agency }]);
+        .insert([{
+          email,
+          agency_name: agency,
+          pdpa_consent: true,
+          consent_timestamp: new Date().toISOString()
+        }]);
 
       if (insertError) throw insertError;
 
@@ -111,14 +117,30 @@ const Mission: React.FC = () => {
                   />
                 </div>
 
+                <div className="flex items-start space-x-3 pt-2">
+                  <div className="mt-1 flex items-center h-5">
+                    <input
+                      id="pdpa"
+                      type="checkbox"
+                      required
+                      checked={agreedToPdpa}
+                      onChange={(e) => setAgreedToPdpa(e.target.checked)}
+                      className="w-4 h-4 text-emerald-600 border-slate-300 rounded focus:ring-emerald-500"
+                    />
+                  </div>
+                  <label htmlFor="pdpa" className="text-[10px] leading-[1.4] text-slate-500 font-semibold">
+                    I agree to the processing of my personal data in accordance with the PDPA and to being contacted via WhatsApp for the purpose of this audit review and KlaimFlow onboarding.
+                  </label>
+                </div>
+
                 {error && (
                   <div className="text-red-500 text-xs font-bold">{error}</div>
                 )}
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
+                  disabled={isSubmitting || !agreedToPdpa}
+                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
                 >
                   {isSubmitting ? (
                     <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">

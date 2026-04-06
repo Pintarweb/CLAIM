@@ -28,9 +28,9 @@ const LandingPage: React.FC = () => {
         <>
             <Hero />
             <Workflow />
-            <Compliance />
             <TrustSnippet />
             <Features />
+            <Compliance />
             <FAQ />
             <Mission />
         </>
