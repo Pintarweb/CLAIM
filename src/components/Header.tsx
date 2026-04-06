@@ -47,6 +47,7 @@ const Header: React.FC = () => {
             <>
               <div className="hidden md:flex items-center space-x-8 text-sm font-medium text-slate-500">
                 <button onClick={() => handleScroll('features')} className="hover:text-emerald-600 transition-colors">Features</button>
+                <button onClick={() => handleScroll('faq')} className="hover:text-emerald-600 transition-colors">FAQ</button>
 
                 {/* Blog Dropdown */}
                 <div className="relative" ref={dropdownRef}>

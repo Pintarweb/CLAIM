@@ -1,19 +1,16 @@
 import React, { useState } from 'react';
 import { supabase } from '../lib/supabase';
 
-interface MissionProps {
-  onSubmit: (email: string) => void;
-}
-
-const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
+const Mission: React.FC = () => {
   const [email, setEmail] = useState('');
   const [agency, setAgency] = useState('');
+  const [agreedToPdpa, setAgreedToPdpa] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    if (!email || !agency) return;
+    if (!email || !agency || !agreedToPdpa) return;
 
     setIsSubmitting(true);
     setError(null);
@@ -21,7 +18,12 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
     try {
       const { error: insertError } = await supabase
         .from('leads')
-        .insert([{ email, agency_name: agency }]);
+        .insert([{
+          email,
+          agency_name: agency,
+          pdpa_consent: true,
+          consent_timestamp: new Date().toISOString()
+        }]);
 
       if (insertError) throw insertError;
 
@@ -32,15 +34,11 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
 
       if (functionError) {
         console.error('Error invoking notify-lead function:', functionError);
-        // We log the error, but we still proceed to the success state for the user 
-        // since the lead was successfully saved in the DB.
       }
 
-      // Save email for the success page (survives refreshes)
-      localStorage.setItem('user_email', email);
-
-      // Success
-      onSubmit(email);
+      // Redirect to WhatsApp
+      const message = `Hi I just requested the Free Audit Review for ${agency}.`;
+      window.location.href = `https://wa.me/60174456243?text=${encodeURIComponent(message)}`;
 
     } catch (err: any) {
       console.error('Error submitting lead:', err);
@@ -74,7 +72,7 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
             </p>
 
             <div className="space-y-6">
-              {bullets.map((b, i) => (
+              {bullets.slice(0, 3).map((b, i) => (
                 <div key={i} className="flex items-start space-x-3">
                   <div className="mt-1 flex-shrink-0 w-5 h-5 rounded-full bg-emerald-500 flex items-center justify-center">
                     <svg className="w-3 h-3 text-white" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -119,14 +117,30 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                   />
                 </div>
 
+                <div className="flex items-start space-x-3 pt-2">
+                  <div className="mt-1 flex items-center h-5">
+                    <input
+                      id="pdpa"
+                      type="checkbox"
+                      required
+                      checked={agreedToPdpa}
+                      onChange={(e) => setAgreedToPdpa(e.target.checked)}
+                      className="w-4 h-4 text-emerald-600 border-slate-300 rounded focus:ring-emerald-500"
+                    />
+                  </div>
+                  <label htmlFor="pdpa" className="text-[10px] leading-[1.4] text-slate-500 font-semibold">
+                    I agree to the processing of my personal data in accordance with the PDPA and to being contacted via WhatsApp for the purpose of this audit review and KlaimFlow onboarding.
+                  </label>
+                </div>
+
                 {error && (
                   <div className="text-red-500 text-xs font-bold">{error}</div>
                 )}
 
                 <button
                   type="submit"
-                  disabled={isSubmitting}
-                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-400 text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
+                  disabled={isSubmitting || !agreedToPdpa}
+                  className="w-full py-4 bg-emerald-600 hover:bg-emerald-700 disabled:bg-slate-300 disabled:cursor-not-allowed text-white font-black rounded-xl transition-all shadow-xl shadow-emerald-100 active:scale-[0.98] flex justify-center items-center"
                 >
                   {isSubmitting ? (
                     <svg className="animate-spin h-5 w-5 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24">
@@ -138,10 +152,28 @@ const Mission: React.FC<MissionProps> = ({ onSubmit }) => {
                   )}
                 </button>
 
-                <p className="text-center text-[10px] text-slate-500 font-bold uppercase tracking-widest">
-                  Our team will reach out within 24 hours.
+                <p className="text-center text-[10px] text-slate-500 font-bold uppercase tracking-widest mt-4">
+                  You’ll be redirected to WhatsApp for instant review
                 </p>
               </form>
+            </div>
+          </div>
+        </div>
+
+        {/* Audit-Ready Kit Section pulled out of columns to balance height */}
+        <div className="mt-20 bg-white/5 rounded-3xl p-8 md:p-12 border border-white/10 max-w-5xl mx-auto">
+          <h3 className="text-2xl md:text-3xl font-black mb-2 text-center text-emerald-300">Your Free 2026 Audit-Ready Kit</h3>
+          <p className="text-sm font-medium text-emerald-50/80 mb-10 text-center">Included with every audit review session:</p>
+
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+            <div className="bg-slate-100 rounded-xl overflow-hidden shadow-2xl transform transition-all hover:-translate-y-2 hover:shadow-emerald-500/20 border-2 border-transparent hover:border-emerald-400 p-1">
+              <img src="/thumbnails/audit_guide.png" alt="Audit Ready Guide" className="w-full h-auto rounded-lg" />
+            </div>
+            <div className="bg-slate-100 rounded-xl overflow-hidden shadow-2xl transform transition-all hover:-translate-y-2 hover:shadow-emerald-500/20 border-2 border-transparent hover:border-emerald-400 p-1">
+              <img src="/thumbnails/policy.png" alt="Official Policy" className="w-full h-auto rounded-lg" />
+            </div>
+            <div className="bg-slate-100 rounded-xl overflow-hidden shadow-2xl transform transition-all hover:-translate-y-2 hover:shadow-emerald-500/20 border-2 border-transparent hover:border-emerald-400 p-1">
+              <img src="/thumbnails/checklist.png" alt="Monthly Checklist" className="w-full h-auto rounded-lg" />
             </div>
           </div>
         </div>
